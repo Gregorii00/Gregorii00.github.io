@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang=ru>
+
+<head>
+	<meta charset=UTF-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+ 	<title>VNSH1</title>
+	<link rel="stylesheet" href="assets/Chart.min.css">
+	<link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+	<div class="error_rate">
+		<div class="form input-control">
+			<!-- Написать предел по x -->
+			<h2>Введите число от -2 до 3</h2> 
+
+			<input class="inputNumber" type=number name=number placeholder="Введите число" autocomplete="off" value="" min="-2" max="3">
+
+			<button onclick="numberInput()">Построить график</button>
+		</div>
+	</div>
+
+	<div class="chart chart_view">
+		<canvas id="myChart"></canvas>
+	</div>
+	
+	<script src="assets/Chart.min.js"></script>
+	<script src="assets/index.js"></script>
+</body>
