@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+    <meta charset="UTF-8"/>
+    <title>Reports</title>
+</head>
+
+<h1>Ежедневные отчеты</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+<body>
+    <form action="/category" method="POST">
+        <p>Введите адрес где категории/подкатегории</p>
+        <input type="file" name="adres_category">
+        <input type="submit" name="report_category" value="Получить отчет">
+    </form>
+</body>
+</html>
